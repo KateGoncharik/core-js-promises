@@ -88,7 +88,7 @@ describe('core-js-promises', () => {
         for (let i = 0; i < sourceNumbers.length; i += 1) {
           const expected = sourceNumbers[i] % 2 === 0 ? 'success' : 'fail';
           if (results[i].status === 'rejected') {
-            done(Error(`the returned promis was in a rejected state`));
+            done(Error(`the returned promise was in a rejected state`));
             isThrowed = true;
             break;
           } else {
